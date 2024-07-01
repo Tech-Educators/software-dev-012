@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  color: #09394f;
+}
+
+h1 {
+  font-family: "Courier New";
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #09394f;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.sub-nav {
+  background-color: #f1efef;
+}
