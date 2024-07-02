@@ -1,0 +1,15 @@
+.product {
+  width: 400px;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+}
