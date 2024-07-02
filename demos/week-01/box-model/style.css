@@ -1,0 +1,12 @@
+.box {
+  width: 140px;
+  height: 140px;
+  background-color: teal;
+  padding: 10px;
+  border: 10px solid tomato;
+  margin: 10px;
+}
+
+.box-sized {
+  box-sizing: border-box;
+}
