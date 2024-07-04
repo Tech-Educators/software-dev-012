@@ -61,11 +61,14 @@ let betterModulo = b % a; // 10
 // it cannot start with a number
 
 // NAMING CONVENTIONS
-let flatcase;
-let snake_case;
-let PascalCase;
-let camelCase;
+let flatcase; // for lazy people
+let snake_case; // for people who like to read easily
+let PascalCase; // for Classes (a JS thing we haven't covered yet)
+let camelCase; // for people who learnt to code with Tim
+// The general "standard" is camelCase
+
 // the below are silly and we do use them (unless we are feeling silly)
 let strName = "Hungarian case starts with the type, then the meaning";
-let nUTcaSe;
 let SCREAMINGCASE;
+let nUTcaSe; // this is a joke, Tim thinks he's funny, its not a real thing
+// let kebab-case;
