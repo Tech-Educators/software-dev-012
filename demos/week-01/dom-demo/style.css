@@ -1,0 +1,9 @@
+body {
+  background-color: tomato;
+  color: white;
+  font-family: monospace;
+}
+
+#img-container {
+  border: 5px solid teal;
+}
