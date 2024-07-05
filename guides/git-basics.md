@@ -30,3 +30,16 @@ Assuming you've saved some changes to the existing files or created/deleted othe
 - `git add .` will **ADD** all the changes made ready to be commited (this is often reffered to as "staging" the changes)
 - `git commit -m "My message"` will **COMMIT** all the changes that were previously added (this is the snapshot)
 - `git push` will **PUSH** all the commits you've made to the remote (GitHub)
+
+## Deploy the site using GitHub Pages
+
+Now that your work in on GitHub, we can turn it into a website.
+In the repository:
+
+- Click `Settings` and choose `Pages` from the left hand menu
+- Under the `Branch` heading change where it says `None` to `main` and click `Save`
+- Wait for it to deploy (3-4 minutes) then the link for your site should appear at the top of this page.
+
+You may need to refresh the page to see the link, but it should look something like:
+
+`https://yourprofile.github.io/your-repo-name`
