@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images, Audio & Video</title>
+  </head>
+  <body>
+    <h1>Images, Audio & Video</h1>
+    <h2>Images</h2>
+    <p>img tags require the src attribute to tell it where to get the image</p>
+    <p>
+      We can use external images in the src (hosted on somebody elses website)
+    </p>
+    <img
+      src="https://techeducators.co.uk/_next/image?url=%2Fimg%2Fstaff%2Fjeztech.png&w=640&q=75"
+      width="300"
+      alt="Jez's face a little too close for comfort"
+    />
+    <p>Or we can download the images to our own project and use that</p>
+    <p>We can even do gifs!</p>
+    <img
+      src="./assets/images/the-weekend.gif"
+      alt="daniel craig saying its the weekend"
+    />
+    <p>
+      The two benefits of using images your have saved are its quicker, and if
+      the original owner takes their image down, you won't have it any more
+    </p>
+    <p>
+      They will work without an alt tag, but if you do that you're a bad person.
+      Put alt tags on your image
+    </p>
+    <h2>Audio</h2>
+    <p>Audio tags work a LOT like img tags, but, they are not self closing.</p>
+    <audio src="./assets/audio/windows-tone.mp3" controls loop></audio>
+    <p>
+      controls shows the controls, loop makes it loop, autoplay should be
+      illegal don't do it (it also probably won't work on modern browsers)
+    </p>
+    <h2>Video</h2>
+    <video
+      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      poster="./assets/images/bbb.png"
+      width="1500"
+      controls
+      autoplay
+      muted
+      loop
+    ></video>
+  </body>
+</html>
