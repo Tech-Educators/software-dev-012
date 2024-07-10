@@ -1,0 +1,17 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 50px 100px 50px;
+  grid-template-rows: 100px 100px;
+}
+
+.item {
+  background-color: tomato;
+}
+
+.navbar {
+  background-color: teal;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  grid-column: span 3;
+  grid-row-start: 1;
+}
