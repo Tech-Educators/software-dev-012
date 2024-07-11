@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images Optimisation with srcSet</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>srcSet for the win</h1>
+    <p>
+      This image will give a different size depending on what the browser
+      decides it is capable of.
+    </p>
+    <img
+      srcset="
+        ./2000x2000.jpg 2000w,
+        ./1000x1000.jpg 1000w,
+        ./800x800.jpg    800w,
+        ./600x600.jpg    600w,
+        ./400x400.jpg    400w
+      "
+      src="./2000x2000.jpg"
+      alt="Forest"
+    />
+    <p>The below image will ALWAYS be the 400x400px image.</p>
+    <img src="./400x400.jpg" alt="Car on mountain" />
+  </body>
+</html>
