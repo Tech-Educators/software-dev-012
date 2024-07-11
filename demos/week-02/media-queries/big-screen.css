@@ -1,0 +1,6 @@
+/* we can even have media queries in seperate files */
+@media (min-width: 1000px) {
+  body {
+    background-color: fuchsia;
+  }
+}

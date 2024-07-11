@@ -1,0 +1,56 @@
+/* basic example */
+body {
+  background-color: tomato;
+  color: white;
+  font-family: monospace;
+}
+
+/* if the condition inside the brackets is true, do the rules in the code block */
+@media (min-width: 800px) {
+  body {
+    background-color: teal;
+  }
+}
+
+/*  real world example */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.blue {
+  background-color: #00a6ff;
+}
+
+.green {
+  background-color: #70c014;
+}
+
+.orange {
+  background-color: #ff8d47;
+}
+
+@media (min-width: 500px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box {
+    width: 300px;
+    height: 300px;
+  }
+}
