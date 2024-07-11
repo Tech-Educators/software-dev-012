@@ -1,11 +1,18 @@
+// global variable to help us keep track of WHICH image we want to see
 let currentIndex = 0;
-const images = [
-  { src: "hills.jpg", alt: "Beautiful green hills" }, // 0
-  { src: "stairs.jpg", alt: "Beautiful artistic stairs" }, // 1
-];
 
-function changeBG() {
-  // set the main image src to be images[currentIndex].src
+const mainimage = document.getElementById("mainimage");
+
+const images = ["hills.jpg", "stairs.jpg"];
+
+function nextImage() {
+  currentIndex++; // increase it by 1
+  mainimage.src = images[currentIndex];
+}
+
+function prevImage() {
+  currentIndex--; // decrease it by 1
+  mainimage.src = images[currentIndex];
 }
 
 // we need to put a small version of each of those images on the page in the #thumbnails div
