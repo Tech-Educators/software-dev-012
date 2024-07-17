@@ -8,7 +8,7 @@ describe("Sum Tests", function () {
     expect(sum(1, 2)).toBe(3);
   });
 
-  test("adds 5 + 6to equal 11", function () {
+  test("adds 5 + 6 to equal 11", function () {
     const result = sum(5, 6);
     expect(result).toBe(11);
   });
