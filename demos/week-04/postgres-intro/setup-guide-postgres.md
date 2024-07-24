@@ -22,4 +22,23 @@
 `DATABASE_CONNECTION=postgresql://postgres.vstcfvucyrtgpqxmwomi:[YOUR-PASSWORD]@aws-0-eu-west-2.pooler.supabase.com:6543/postgres` 
 19. replace the part in squarebrackets with your database password
 20. `DATABASE_CONNECTION=postgresql://postgres.vstcfvucyrtgpqxmwomi:thisismypassword@aws-0-eu-west-2.pooler.supabase.com:6543/postgres`
-21. 
+21. We need some way to connect/talk to our database.
+
+```js
+const db = new pg.Pool({
+    connectionString: process.env.DATABASE_CONNECTION
+})
+```
+
+22. now you can use the db object inside your express endpoints to talk to /maniuplate your database. Anything you can do in the 'query editor' on supabase, you can do here. 
+
+for example :
+
+```js
+app.get('/games', async function (request, response) {
+    // we can use the 'DB' object to query/talk to mypost database. 
+    const result = await db.query(`SELECT * FROM games`)
+    const games = result.rows
+    response.json(games)
+})
+```
