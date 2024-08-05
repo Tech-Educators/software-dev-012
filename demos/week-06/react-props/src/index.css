@@ -1,0 +1,28 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 340px;
+  height: 360px;
+  background-color: #00bbff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  background-color: #2ebe06;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  background-color: pink;
+}
