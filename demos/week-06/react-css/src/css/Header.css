@@ -1,0 +1,20 @@
+header {
+  background-color: teal;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}

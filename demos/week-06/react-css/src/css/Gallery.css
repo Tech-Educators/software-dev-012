@@ -1,0 +1,9 @@
+.gallery {
+  display: flex;
+  align-items: center;
+}
+
+/* this line made Tim realise you haven't played CSS diner yet... */
+.gallery img {
+  width: 33%;
+}
