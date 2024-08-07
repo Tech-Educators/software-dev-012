@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function VeryBasicModal() {
+export default function BasicModal() {
   const [showModal, setShowModal] = useState(false);
 
   function handleModal() {
@@ -9,8 +9,8 @@ export default function VeryBasicModal() {
 
   return (
     <>
-      <button onClick={handleModal}>Show/hide</button>
-      {showModal && <p>I am sometimes hidden.</p>}
+      <button onClick={handleModal}>Show/Hide</button>
+      {showModal && <p>I am sometimes showing</p>}
     </>
   );
 }
