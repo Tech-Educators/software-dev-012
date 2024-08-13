@@ -5,7 +5,7 @@ export default function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(form);
+    console.log(form); // instead we might make a fetch with the data to our database
     // this will set state to be back to how is tarted, meaning hte input will go back to being empty
     setForm({ username: "", password: "" });
   }
