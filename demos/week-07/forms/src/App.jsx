@@ -6,6 +6,8 @@ export default function App() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(form);
+    // this will set state to be back to how is tarted, meaning hte input will go back to being empty
+    setForm({ username: "", password: "" });
   }
 
   function handleChange(event) {
