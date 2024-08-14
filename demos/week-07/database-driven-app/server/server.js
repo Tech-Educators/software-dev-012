@@ -19,4 +19,17 @@ app.get("/candles", async function (request, response) {
   response.json(data.rows);
 });
 
+app.post("/candles", async function (request, response) {
+  const scent = request.body.scent;
+  const colour = request.body.colour;
+  const price = request.body.price;
+
+  // add the cnadle to the database
+  await db.query(
+    `INSERT INTO candles (scent, colour, price) VALUES ($1, $2, $3)`,
+    [scent, colour, price]
+  );
+  response.json("Candles POST endpoint");
+});
+
 app.listen(8080, () => console.log("Server is running on port 8080"));
