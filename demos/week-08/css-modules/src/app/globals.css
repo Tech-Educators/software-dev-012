@@ -1,0 +1,5 @@
+/* Neither on /page.js or /about/page.js use this class, they use the module version of it */
+.description {
+  color: blue;
+}
+/* this one will not have an effect, because we used module.css */
