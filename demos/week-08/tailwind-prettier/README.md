@@ -4,7 +4,7 @@
 
 Run `npm install -D prettier prettier-plugin-tailwindcss` to install the two packages as a dev dependancies.
 
-Create a file called `` and put the following inside it.
+Create a file called `.prettierrc` and put the following inside it.
 
 ```
 {
