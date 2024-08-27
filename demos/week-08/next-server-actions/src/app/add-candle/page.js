@@ -1,11 +1,12 @@
-import { db } from "@/lib/db";
+// import { db } from "@/lib/db";
+import pg from "pg";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 export default function AddCandlePage() {
   async function handleAddCandle(formData) {
     "use server";
-
+    const db = new pg.Pool({ connectionString: process.env.DATABASE_URL });
     console.log("form action done");
 
     const scent = formData.get("scent");
