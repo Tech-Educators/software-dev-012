@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.flash {
+  width: 400px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 15px;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+}
