@@ -6,11 +6,6 @@ import { currentUser } from "@clerk/nextjs/server";
 export default async function ProfilePage() {
   const user = await currentUser();
 
-  // if the user ISN'T signed in with clerk, don't carry on, just tell them to sign in
-  if (!user) {
-    return <NoUser />;
-  }
-
   // check the database to see if there is a profile with this clerk_id
   const response = await db.query(
     `SELECT * FROM profiles WHERE clerk_id = $1`,

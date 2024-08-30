@@ -1,3 +1,4 @@
+import { NoUser } from "@/components/NoUser";
 import {
   ClerkProvider,
   SignInButton,
@@ -13,11 +14,12 @@ export default function RootLayout({ children }) {
         <body>
           <SignedOut>
             <SignInButton />
+            <NoUser />
           </SignedOut>
           <SignedIn>
             <UserButton />
+            {children}
           </SignedIn>
-          {children}
         </body>
       </html>
     </ClerkProvider>
