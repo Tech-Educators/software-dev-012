@@ -1,4 +1,6 @@
+import { NoUser } from "@/components/NoUser";
 import { db } from "@/lib/db";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
 
 export default async function Home() {
@@ -29,10 +31,15 @@ export default async function Home() {
   return (
     <div>
       <h2>Home</h2>
-      <form action={handleAddPost}>
-        <textarea name="post_content" placeholder="Your Post..."></textarea>
-        <button>Add Post</button>
-      </form>
+      <SignedIn>
+        <form action={handleAddPost}>
+          <textarea name="post_content" placeholder="Your Post..."></textarea>
+          <button>Add Post</button>
+        </form>
+      </SignedIn>
+      <SignedOut>
+        <NoUser />
+      </SignedOut>
       {posts.map(function (post) {
         return (
           <div key={post.id}>
